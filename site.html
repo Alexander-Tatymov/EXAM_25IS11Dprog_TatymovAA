@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Салон красоты «Элеганс»</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff0f5;
+            color: #333;
+        }
+        header {
+            background-color: #ff69b4;
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .services, .gallery, .reviews, .contacts {
+            background-color: #fff;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+        /* Услуги */
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .service-item {
+            width: 250px;
+            background-color: #ffe4e1;
+            margin: 10px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        /* Галерея */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+        }
+        .gallery-grid img {
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        /* Отзывы */
+        .review {
+            background-color: #ffe4e1;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        /* Контакты */
+        .contacts-info {
+            text-align: center;
+        }
+        /* Общие стили */
+        footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Салон красоты «Элеганс»</h1>
+        <nav>
+            <a href="#services">Услуги</a>
+            <a href="#gallery">Галерея</a>
+            <a href="#reviews">Отзывы</a>
+            <a href="#contacts">Контакты</a>
+        </nav>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Наши услуги</h2>
+        <div class="services-list">
+            <div class="service-item">
+                <h3>Стрижка</h3>
+                <p>Современные стрижки для мужчин и женщин.</p>
+            </div>
+            <div class="service-item">
+                <h3>Окрашивание</h3>
+                <p>Тонирование, все виды окрашивания и мелирование.</p>
+            </div>
+            <div class="service-item">
+                <h3>Маникюр и педикюр</h3>
+                <p>Классика и дизайн ногтей на высшем уровне.</p>
+            </div>
+            <div class="service-item">
+                <h3>Уход за кожей</h3>
+                <p>Пилинги, маски и процедуры для лица.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery">
+        <h2>Галерея</h2>
+        <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1604908552900-3588b12b2221?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Прическа 1" />
+            <img src="https://images.unsplash.com/photo-1596094971809-51f590dde723?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Маникюр" />
+            <img src="https://images.unsplash.com/photo-1554151228-5b0b545f0a76?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Окрашивание" />
+            <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Уход за кожей" />
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews">
+        <h2>Отзывы клиентов</h2>
+        <div class="review">
+            <p>"Очень доволна результатом! Мастера профессионалы." - Анна</p>
+        </div>
+        <div class="review">
+            <p>"Обслуживание на высшем уровне! Рекомендую всем." - Мария</p>
+        </div>
+        <div class="review">
+            <p>"Люблю этот салон! Здесь всегда тепло и уютно." - Светлана</p>
+        </div>
+    </section>
+
+    <section id="contacts" class="contacts">
+        <h2>Контактная информация</h2>
+        <div class="contacts-info">
+            <p>Адрес: ул. Цветочная, д. 10, г. Москва</p>
+            <p>Телефон: +7 495 123-45-67</p>
+            <p>Эл. почта: info@elegance.ru</p>
+            <p>Рабочие часы: Пн-Вс, 09:00 - 21:00</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Салон красоты «Элеганс»</p>
+    </footer>
+</body>
+</html>
